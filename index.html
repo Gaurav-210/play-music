@@ -6,9 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no" />
     <meta name="description" content="It is a web Application that can play songs!.It has various functionalities that you find in modern music apps and listen to a lot of songs!. It is a Voice Controlled Music Application.">
-    <meta name="author" content="Mukesh Dubey">
+    <meta name="author" content="Gaurav Chauhan">
 	<meta name="keywords" content="Alexify-Voice-Controlled-Music-Player-App,Songify,Songligy,Songify Music app,Music,Music-Player-App,3 pegg,Affair,Daang,Chalti hai kya 9 se 12,Set jatt,Banja tu rani,play,pause">
-    <title> ALEXIFY A VOICE CONTROLLED MUSIC APP</title>
+    <title> Alexify</title>
 	<link rel="shortcut icon" type="image/png" href="img/titleimg.png" />
     <link rel="stylesheet" type="text/css" href="font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="hover.css">
@@ -34,9 +34,8 @@
 	<!----------------------------------------------------------------------------welcome-screen-------------------------------------------------------------------------->
 
         <section class="w3-container welcome-screen">
-        	
-            <h1 class="full animated fadeInLeftBig"> Welcome To Alexify </h1>
-            <h3 class="full animated  fadeInRightBig">  Enter Your Name to Access Your Account  </h3>
+            <h1 class="full animated fadeInLeftBig"> Welcome To Alexify</h1>
+            <h3 class="full animated  fadeInRightBig" style="color:purple;">  Enter Your Name to Access Your Account  </h3>
             <div class="input-wrapper">
                 <input class="hvr-outline-out" type="name" id="name-input" placeholder="Your Name" title="Please Enter valid Name (Name must be of 3 or more char.)" autofocus required pattern="[A-Z a-z]{3,}" >
            <button class="hvr-pulse" id="btnSearch" style="cursor:pointer" onclick="doSomething();"> Go </button>
@@ -50,8 +49,9 @@
             <header>
 
                 <div class="right floated user-name hvr-grow"> </div>
-				<a href="index.html"><button class="backbutton fa fa-sign-out hvr-icon-back" style="cursor:pointer">Go Back </button></a>
-                <img id="soundchk" class="animated rotateIn" src="https://i.imgur.com/OkUqDXe.gif"/ title="Click Here to Give Command.Or Press R to Record Your Command." style="color: whitesmoke;">
+				<a href="index.html"><button class="backbutton fa fa-sign-out hvr-icon-back">Go Back </button></a>
+                
+                <img id="soundchk" class="animated rotateIn" src="img/mike.png"/ title="Click Here to Give Command.Or Press R to Record Your Command.">
 				<p id="demo" class="hvr-grow"></p>
             </header>
             <section class="content">
@@ -142,7 +142,7 @@
 <div class="container">
   
   <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Replace Song</button>
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
@@ -243,7 +243,7 @@
         
         <script type="text/javascript">
 jQuery(document).ready(function() {
-    jQuery('#loading').fadeOut(3400);
+    jQuery('#loading').fadeOut(3300);
 });
 </script>
 

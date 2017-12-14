@@ -1,6 +1,6 @@
 var recognition = new webkitSpeechRecognition();
 recognition.lang = 'en-US';
- recognition.continuous = true;
+ 
 
 recognition.interimResults = true;
 
@@ -10,6 +10,12 @@ recognition.onstart = function() {
 
   recognition.onerror = function(event) {
       console.error(event);
+      alert("Can not Recognise Your Command please try Again")
+       speechRs.speechinit('Google हिन्दी',function(e){
+	        speechRs.speak("Sorry, i can not recognise your command. please try again", function() {
+                   //speaking completed.
+               }, false);
+      });
   };
 
 recognition.onspeechend = function() {
@@ -53,7 +59,7 @@ function callWit(final_transcript) {
         success: function(response) {
             console.log("success!", response);
             if(response.entities.intent[0].value == 'play') {
-            if(response.entities.hasOwnProperty('search_query')) {
+            if(response.entities.hasOwnProperty('local_search_query')) {
                   var songName = response.entities.search_query[0].value ;
                   var matchIndex = 0 ;
                   for(var i =0; i < songs.length ; i++) {
@@ -101,7 +107,7 @@ var songNumber=1; //initial song number
 $( document ).ready(function() {
     console.log( "Welcome To Alexify-Voice-Controlled-Music-App" );
     speechRs.speechinit('Google हिन्दी',function(e){
-	        speechRs.speak("Hi,Welcome to Alexify Voice Controlled Music App, Please Enter Your Name to Further Proceed.", function() {
+	        speechRs.speak("Hello,  User,   I'm Gaurav   ,Welcome To Alexify-Voice-Controlled-Music-App  , Please Enter Your Name to Further Proceed.", function() {
                    //speaking completed.
                }, false);
       });
