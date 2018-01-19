@@ -23,4 +23,4 @@
 
 ### 8. It also Tells the User about the Status of song that Either Music is pLayed or Paused.
 
-## **[Link To My Live Project Where it is Hosted By Clicking Here...](https://gaurav-210.github.io/play-music/)**
+## **[Link To My Live Project Where it is Hosted By Clicking Here...](https://mukeshdubey1420.github.io/ALexify-Voice-Controlled-Music-Player/)**
