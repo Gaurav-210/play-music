@@ -372,7 +372,7 @@ $('.total-songs').text("Songs: " + songs.length);
 
 function fetchSongs() {
     $.ajax({
-        'url': 'https://raw.githubusercontent.com/MukeshDubey1420/Reference-Api/master/Api.json',
+        'url': 'https://raw.githubusercontent.com/gaurav-210/Reference-Api/master/Api.json',
         'dataType': 'json',
         'method': 'GET',
         'success': function(responseData) {
